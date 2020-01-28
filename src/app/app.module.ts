@@ -35,6 +35,7 @@ import { HomeComponent } from './shared/home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProfileEditComponent } from './pages/profileEdit/profile-edit.component';
+import { ProfileViewComponent } from './pages/profile-view/profile-view.component';
 import { DirectoryComponent } from './pages/directory/directory.component';
 import { CasePipe } from './shared/pipes/case.pipe';
 import { AddressFormComponent } from './shared/forms/address-form/address-form.component';
@@ -74,6 +75,7 @@ import { AboutPicturesFormDialogComponent } from './shared/dialogs/about-picture
     FaqComponent,
     EditableElementComponent,
     AboutPicturesFormDialogComponent,
+    ProfileViewComponent,
   ],
   entryComponents: [
     SimpleDialogComponent,

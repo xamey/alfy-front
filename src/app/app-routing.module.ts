@@ -13,6 +13,7 @@ import {PageIsBuildingComponent} from './pages/page-is-building/page-is-building
 import {FaqComponent} from './pages/faq/faq.component';
 import {HighSchoolComponent} from './pages/high-school/high-school.component';
 import {AssociationComponent} from './pages/association/association.component';
+import { ProfileViewComponent } from './pages/profile-view/profile-view.component';
 
 const routes: Routes = [
   // { path: 'signup', component: SignupComponent, canActivate: [AuthGuard] },
@@ -26,6 +27,7 @@ const routes: Routes = [
       { component: AboutComponent, path: 'about' },
       { component: DirectoryComponent, path: 'directory' },
       { component: ProfileEditComponent, path: 'profile/:id' },
+      { component: ProfileViewComponent, path: 'profile-view/:id' },
       { path: 'high-school', redirectTo: 'is-building', pathMatch: 'full' },
       { path: 'association', redirectTo: 'is-building', pathMatch: 'full' },
       { path: 'faq', redirectTo: 'is-building', pathMatch: 'full' },
