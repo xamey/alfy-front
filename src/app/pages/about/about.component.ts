@@ -11,8 +11,13 @@ import {environment} from '../../../environments/environment';
 })
 export class AboutComponent implements OnInit {
 
-  @ViewChild('slideshow') slideshow;
-  backgroundImages:  IImage[] = [];
+  /*@ViewChild('slideshow') slideshow;
+  backgroundImages:  IImage[] = [];*/
+
+  backgroundImages: (string)[] = [
+    "/assets/img/logo-alfy.jpg",
+    "/assets/img/anciens-voyagent.jpg"    
+  ];
 
   constructor(
     private pageService: PageService,
@@ -24,7 +29,7 @@ export class AboutComponent implements OnInit {
         const pageInfo: PageInfo = response;
         pageInfo.files.forEach(file => {
           const iImage: IImage = Object.assign(file.options, { url: environment.apiURL + '/' + file.path });
-          this.backgroundImages.push(iImage);
+          /*this.backgroundImages.push(iImage);*/
         });
       }).catch(console.error);
   }
